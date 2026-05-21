@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "BetterQueue";
+}
+
+<h1>BetterQueue</h1>
+
+<h2>Select a location</h2>
+<ul>
+    @foreach (var location in Model.Locations)
+    {
+        <li>
+            @location.LocationName
+        </li>
+    }
+</ul>
